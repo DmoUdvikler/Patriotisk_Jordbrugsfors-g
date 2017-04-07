@@ -22,7 +22,7 @@
 
     <nav class="navbar navbar-light bg-faded navbar-inverse navbar-toggleable-sm">
 
-        <button class="navbar-toggler navbar-toggler-right" type="button"
+        <button class="navbar-toggler navbar-toggler-right bg-success" type="button"
                 data-toggle="collapse" data-target="#mynavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,12 +30,20 @@
         <a href="#" class="navbar-brand text-success hidden-md-up">Patriotrisk Selskab</a>
 
         <div class="collapse navbar-collapse" id="mynavbar">
-            <div class="navbar-nav">
+            <div class="navbar-nav mr-auto">
                 <a class="nav-item nav-link active text-success" href="#">Start</a>
                 <a class="nav-item nav-link text-success" href="#">Forsøg</a>
                 <a class="nav-item nav-link text-success" href="#">Mark</a>
                 <a class="nav-item nav-link text-success" href="#">Sprøjtemidler</a>
+
             </div><!--navbar nav-->
+            <label class="form-control-label sr-only" for="search">Search </label>
+                <form class="form-inline">
+                    <input id="searchInput" class="form-control mr-2 " placeholder="Søg"/>
+
+                    <button class="btn btn-success">Søg</button>
+                </form>
+       
         </div><!--navbar collapse-->
     </nav>
 </body>
