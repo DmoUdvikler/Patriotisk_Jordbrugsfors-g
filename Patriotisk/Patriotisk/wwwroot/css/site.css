@@ -1,6 +1,9 @@
 ﻿/*.active {
-    border-bottom-style: solid; 
+    border-bottom-style: solid;
     border-bottom-color: #000000;
-    }*/
-
+    text-decoration: underline;
+}*/
+.img-article{
+    height:30vh;
+}
     
