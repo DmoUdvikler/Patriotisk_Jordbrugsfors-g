@@ -6,4 +6,8 @@
 .img-article{
     height:30vh;
 }
-    
+.card {
+    margin: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}

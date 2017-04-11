@@ -11,7 +11,7 @@
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-   <title>Patriotisk Selskabs Markforsøg</title>
+    <title>Patriotisk Selskabs Markforsøg</title>
 
 </head>
 <body>
@@ -38,33 +38,82 @@
 
             </div><!--navbar nav-->
             <label class="form-control-label sr-only" for="search">Search </label>
-                <form class="form-inline">
-                    <input id="searchInput" class="form-control mr-2 " placeholder="Søg"/>
+            <form class="form-inline">
+                <input id="searchInput" class="form-control mr-2 " placeholder="Søg" />
 
-                    <button class="btn btn-success">></button>
-                </form>
+                <button class="btn btn-success">></button>
+            </form>
         </div><!--navbar collapse-->
     </nav>
 
     <div class="container mt-4">
         <div class="row">
-            <section class="col-md-4 col-sm-11 ">
-                <img class="mx-auto img-fluid "
+            <section class="card col-md-4 col-sm-11 ">
+                <h2 class="card-header"> Korn typer</h2>
+                <img class="card-img-top mx-auto img-fluid img-article"
                      src="images/kornmark.jpg" alt="kornmark" />
-                     <h3>Korn typer</h3>
-                <p>Der er mange forskellige slags typer korn...</p>
+                <div class="card-block">
+                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
+                </div>
             </section>
-            <section class="col-md-4 col-sm-11 ">
-                <img class="mx-auto img-fluid"
-                     src="images/83327_1.jpg" alt="kornmark" />
-                <h3>Korn typer</h3>
-                <p>Der er mange forskellige slags typer korn...</p>
+            <section class="card col-md-4 col-sm-11 ">
+                <div class="card-block">
+
+
+                    <h3 class="card-title">Korn typer</h3>
+                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
+                </div>
+                <img class=" card-img-bottom mx-auto img-fluid" src="images/83327_1.jpg" alt="kornmark" />
             </section>
-            <section class="col-md-4 col-sm-11 ">
-                <img class="mx-auto img-fluid push"
+            <section class="card card-success card-inverse col-md-4 col-sm-11 ">
+                <img class="card-img-top mx-auto img-fluid push"
                      src="images/ww192997_1.jpg.crop_display.jpg" alt="kornmark" />
-                <h3>Korn typer</h3>
-                <p>Der er mange forskellige slags typer korn...</p>
+                <div class="card-block card-img-overlay">
+
+                    <h3 class="card-title">Korn typer</h3>
+                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
+                </div>
+            </section>
+
+            <section class="card col-md-4 col-sm-11" style="padding-left:0px; padding-right: 0px;">
+                <h2 class="card-header">Korn typer</h2>
+                <img class=" card-img-top img-fluid" src="images/83327_1.jpg" alt="kornmark" />
+                <div class="card-block">
+                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
+                </div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action" href="#">Contact</a>
+                    <a class="list-group-item list-group-item-action" href="#">About me</a>
+                    <a class="list-group-item list-group-item-action" href="#">Stuff</a>
+                </div>
+            </section>
+            <section class="card col-md-4 col-sm-11" style="padding-left:0px; padding-right: 0px;">
+                <header>
+                    <nav class="nav nav-tabs card-header-tabs">
+                        <a class="nav-link nav-item" href="#">Contact</a>
+                        <a class="nav-link nav-item" href="#">About me</a>
+                        <a class="nav-link nav-item" href="#">Stuff</a>
+                    </nav>
+                </header>
+                <img class=" card-img-top img-fluid mt-2" src="images/83327_1.jpg" alt="kornmark" />
+                <div class="card-block">
+                    <h2 class="card-title">Korn typer</h2>
+                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
+                </div>
+                <!--<div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action" href="#">Contact</a>
+                    <a class="list-group-item list-group-item-action" href="#">About me</a>
+                    <a class="list-group-item list-group-item-action" href="#">Stuff</a>
+                </div>-->
+            </section>
+            <section class="card col-md-4 col-sm-11 ">
+                <div class="card-block">
+
+
+                    <h3 class="card-title">Korn typer</h3>
+                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
+                </div>
+                <img class=" card-img-bottom mx-auto img-fluid" src="images/83327_1.jpg" alt="kornmark" />
             </section>
         </div>
     </div>
