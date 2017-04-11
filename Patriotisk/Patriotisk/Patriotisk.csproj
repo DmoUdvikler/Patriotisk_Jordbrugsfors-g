@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\forsøg.html" />
     <Content Include="wwwroot\index.html" />
   </ItemGroup>
   <ItemGroup>
