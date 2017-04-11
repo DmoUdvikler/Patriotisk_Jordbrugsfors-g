@@ -11,6 +11,7 @@
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Patriotisk Selskabs Markforsøg</title>
 
 </head>
@@ -38,11 +39,19 @@
 
             </div><!--navbar nav-->
             <label class="form-control-label sr-only" for="search">Search </label>
-            <form class="form-inline">
-                <input id="searchInput" class="form-control mr-2 " placeholder="Søg" />
-
-                <button class="btn btn-success">></button>
+            <form class="form-inline ">
+                <div class="form-group">
+                    <input id="searchInput" class="form-control mr-2 " placeholder="Søg"/>
+                    <button type="submit" class="add-on btn-link"><i class="btn fa fa-search"></i></button>
+                </div>
+               
             </form>
+            <!--<div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for..."/>
+                <span class="input-group-btn">
+                    <button type="button"> <i class="btn fa fa-search"></i></button>
+                </span>
+            </div>-->
         </div><!--navbar collapse-->
     </nav>
 
