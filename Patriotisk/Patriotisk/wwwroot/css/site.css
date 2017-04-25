@@ -8,4 +8,8 @@
 .card {
     margin: 30px;
     padding: 0;
-}   
+}
+
+.bootstrap-vertical-nav{
+    background-color: white;
+}

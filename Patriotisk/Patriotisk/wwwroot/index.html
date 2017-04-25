@@ -16,112 +16,53 @@
 
 
 </head>
-<body>
-
+<body style="background: url(images/backgroundColor.png) repeat;">
     <header class="clearfix hidden-sm-down" style="height: 30vh; background: url(images/planteavl_c.jpg) no-repeat center center; background-size: cover; margin-top: 0px;">
         <img class"hidden-sm-down" src="images/logo.png" alt="Patriotisk Markforsøg Header">
     </header>
+    <nav class="navbar justify-content-end navbar-light navbar-inverse navbar-toggleable" style="margin-bottom:0;">
 
-    <nav class="navbar navbar-light bg-faded navbar-inverse navbar-toggleable-sm">
+        <label class="form-control-label sr-only" for="search">Search </label>
+        <form class="form-inline ">
+            <div class="form-group">
+                <input id="searchInput" class="form-control mr-2 " placeholder="Søg" />
+                <button type="submit" class="add-on btn-link"><i class="btn fa fa-search btn-secondary "></i></button>
+            </div>
+        </form>
 
-        <button class="navbar-toggler navbar-toggler-right bg-success" type="button"
-                data-toggle="collapse" data-target="#mynavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    </nav> <!--Search Nav-->
 
-        <a href="#" class="navbar-brand text-success hidden-md-up">Patriotisk Selskab</a>
-
-        <div class="collapse navbar-collapse" id="mynavbar">
-            <div class="navbar-nav mr-auto">
-                <a class="nav-item nav-link active text-success" href="index.html">Start</a>
-                <a class="nav-item nav-link text-success" href="forsøg.html">Forsøg</a>
-                <a class="nav-item nav-link text-success" href="#">Mark</a>
-                <a class="nav-item nav-link text-success" href="#">Sprøjtemidler</a>
-
-            </div><!--navbar nav-->
-            <label class="form-control-label sr-only" for="search">Search </label>
-            <form class="form-inline ">
-                <div class="form-group">
-                    <input id="searchInput" class="form-control mr-2 " placeholder="Søg"/>
-                    <button type="submit" class="add-on btn-link"><i class="btn fa fa-search"></i></button>
-                </div>
-               
-            </form>
-            <!--<div class="input-group">
-                <input type="text" class="form-control" placeholder="Search for..."/>
-                <span class="input-group-btn">
-                    <button type="button"> <i class="btn fa fa-search"></i></button>
-                </span>
-            </div>-->
-        </div><!--navbar collapse-->
-    </nav>
-
-    <div class="row mt-4">
-            <section class="card col-md-3 col-sm-11 ">
-                <h2 class="card-header"> Korn typer</h2>
-                <img class="card-img-top mx-auto img-fluid img-article"
-                     src="images/kornmark.jpg" alt="kornmark" />
-                <div class="card-block">
-                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
-                </div>
-            </section>
-            <section class="card col-md-3 col-sm-11 ">
-                <div class="card-block">
+    <div class="col" style="padding:25px">
+    <div class="row ">
 
 
-                    <h3 class="card-title">Korn typer</h3>
-                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
-                </div>
-                <img class=" card-img-bottom mx-auto img-fluid" src="images/83327_1.jpg" alt="kornmark" />
-            </section>
-            <section class="card card-success card-inverse col-md-3 col-sm-11 ">
-                <img class="card-img-top mx-auto img-fluid push"
-                     src="images/ww192997_1.jpg.crop_display.jpg" alt="kornmark" />
-                <div class="card-block card-img-overlay">
-
-                    <h3 class="card-title">Korn typer</h3>
-                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
-                </div>
-            </section>
-
-            <section class="card col-md-3 col-sm-11" style="padding-left:0px; padding-right: 0px;">
-                <h2 class="card-header">Korn typer</h2>
-                <img class=" card-img-top img-fluid" src="images/83327_1.jpg" alt="kornmark" />
-                <div class="card-block">
-                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
-                </div>
-                <div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action" href="#">Contact</a>
-                    <a class="list-group-item list-group-item-action" href="#">About me</a>
-                    <a class="list-group-item list-group-item-action" href="#">Stuff</a>
-                </div>
-            </section>
-            <section class="card col-md-3 col-sm-11" style="padding-left:0px; padding-right: 0px;">
-                <header>
-                    <nav class="nav nav-tabs card-header-tabs">
-                        <a class="nav-link nav-item" href="#">Contact</a>
-                        <a class="nav-link nav-item" href="#">About me</a>
-                        <a class="nav-link nav-item" href="#">Stuff</a>
-                    </nav>
-                </header>
-                <img class=" card-img-top img-fluid mt-2" src="images/83327_1.jpg" alt="kornmark" />
-                <div class="card-block">
-                    <h2 class="card-title">Korn typer</h2>
-                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
-                </div>
-                <!--<div class="list-group list-group-flush">
-                    <a class="list-group-item list-group-item-action" href="#">Contact</a>
-                    <a class="list-group-item list-group-item-action" href="#">About me</a>
-                    <a class="list-group-item list-group-item-action" href="#">Stuff</a>
-                </div>-->
-            </section>
-            <section class="card col-md-3 col-sm-11 ">
-                <div class="card-block">
-                    <h3 class="card-title">Korn typer</h3>
-                    <p class="card-text">Der er mange forskellige slags typer korn...</p>
-                </div>
-                <img class=" card-img-bottom mx-auto img-fluid" src="images/83327_1.jpg" alt="kornmark" />
-            </section>
+        <div class="col col-md-2 col-lg-2 bootstrap-vertical-nav rounded" style="background-color:white">
+            <ul class="nav flex-column navbar-inverse"  id="verticalNavBarMenu">
+                <li class="nav-item">
+                    <a class="nav-link h5">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
         </div>
+
+        <div class="container-fluid">
+            <img class="img-fluid" src="images/examplechart.png" alt="chart" />
+
+
+        </div>
+    </div>
+
+    </div>
 </body>
 </html>
