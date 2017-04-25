@@ -9,9 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\event_Info.html" />
     <Content Include="wwwroot\forsøg.html" />
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\index_Skabelon.html" />
+    <Content Include="wwwroot\kontakt.html" />
+    <Content Include="wwwroot\news.html" />
+    <Content Include="wwwroot\videos.html" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />

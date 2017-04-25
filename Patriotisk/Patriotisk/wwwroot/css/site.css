@@ -1,15 +1,16 @@
 ﻿.active {
-    border-bottom-style: solid;
-    border-bottom-color: #000000;
+    background-color: #338D57;
+}   
+
+.img-article {
+    height: 30vh;
 }
-.img-article{
-    height:30vh;
-}
+
 .card {
     margin: 30px;
     padding: 0;
 }
 
-.bootstrap-vertical-nav{
+.bootstrap-vertical-nav {
     background-color: white;
 }
