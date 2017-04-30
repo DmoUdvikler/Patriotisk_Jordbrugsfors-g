@@ -7,10 +7,21 @@
 }
 
 .card {
-    margin: 30px;
-    padding: 0;
+    /*margin: 10px;*/
+    padding: 5px;
 }
 
 .bootstrap-vertical-nav {
     background-color: white;
+}
+.card-title {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.center-cropped {
+    width: 100px;
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
