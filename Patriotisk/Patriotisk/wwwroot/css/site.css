@@ -1,30 +1,30 @@
 ﻿.active {
     background-color: #338D57;
-}   
+}
 
 .img-article {
     height: 30vh;
 }
 
-.menu.img {
-    /*margin: 10px;*/
-    padding: 5px;
-}
 
 .bootstrap-vertical-nav {
     background-color: white;
 }
+
 .card-title {
     color: white;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .center-cropped {
-    width: 250px;
-    height: 150px;
+    max-width: 300px;
     background-position: center center;
     background-repeat: no-repeat;
+    padding: 5px;
 }
+
 .box-background {
     background-color: white;
+}
+.container-fluid {
 }
