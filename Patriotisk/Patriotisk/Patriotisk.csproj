@@ -16,6 +16,7 @@
     <Content Include="wwwroot\kontakt.html" />
     <Content Include="wwwroot\lib\footer.html" />
     <Content Include="wwwroot\news.html" />
+    <Content Include="wwwroot\opretforsøg.html" />
     <Content Include="wwwroot\videos.html" />
   </ItemGroup>
   <ItemGroup>
