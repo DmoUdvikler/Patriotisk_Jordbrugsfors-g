@@ -13,6 +13,7 @@
     <Content Include="wwwroot\forsøg.html" />
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\index_Skabelon.html" />
+    <Content Include="wwwroot\indtastdata.html" />
     <Content Include="wwwroot\kontakt.html" />
     <Content Include="wwwroot\lib\footer.html" />
     <Content Include="wwwroot\news.html" />
