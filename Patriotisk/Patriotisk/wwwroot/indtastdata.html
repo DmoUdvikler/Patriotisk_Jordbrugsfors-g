@@ -58,10 +58,10 @@
                     </div><!--navbar collapse-->
                 </nav>
             </div>
-        </div>        
+        </div>
         <div class="row mt-2">
-            <section class="col-lg-12 col-md-10 col-sm-12 rounded" style="background-color:white">             
-                    <h3>Indtast data</h3>
+            <section class="col-lg-12 col-md-10 col-sm-12 rounded" style="background-color:white">
+                <h3>Indtast data</h3>
                 <form>
                     <div class="form-group">
                         <label for="exampleSelect1">Vælg forsøg</label>
@@ -70,40 +70,44 @@
                             <option>Forsøgsnavn2</option>
                             <option>Forsøgsnavn3</option>
                         </select>
-                    </div>                        
-                        <div class="form-group">
-                            <label for="inputGraphName">Grafnavn</label>
-                            <input class="form-control" id="inputGraphId" aria-describedby="graphHelp" placeholder="Indtast grafnavn">
-                        </div>
-                        <div class="form-group">
-                            <label for="graphvertinput">Graftekst vertical</label>
-                            <input class="form-control" id="inputgraphvert" placeholder="Graftekst vertical">
-                        </div>
-                        <div class="form-group">
-                            <label for="graphorzinput">Graftekst horizontal</label>
-                            <input class="form-control" id="graphhorz" placeholder="Graftekst horizontal">
-                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputGraphName">Grafnavn</label>
+                        <input class="form-control" id="inputGraphId" aria-describedby="graphHelp" placeholder="Indtast grafnavn">
+                    </div>
+                    <div class="form-group">
+                        <label for="graphvertinput">Graftekst vertical</label>
+                        <input class="form-control" id="inputgraphvert" placeholder="Graftekst vertical">
+                    </div>
+                    <div class="form-group">
+                        <label for="graphorzinput">Graftekst horizontal</label>
+                        <input class="form-control" id="graphhorz" placeholder="Graftekst horizontal">
+                    </div>
                     <h4>Tabel</h4>
-                        <div class="form-group">
-                            <table class="table" style="width:100%">
-                                <tbody>
-                                    <tr>
-                                        <th>Data x-akse</th>
-                                        <th>Data y-akse</th>
-                                    </tr>
-                                    <tr>
-                                        <td><span id="A1" contenteditable>Indtast data</span></td>
-                                        <td><span id="B1" contenteditable>Indtast data</span></td>
-                                       
-                                    </tr>                                   
-                                </tbody>
-                               
-                            </table>
-                       
-                        </div>
+                    <div class="form-group">
+                        <table class="table" style="width:100%">
+                            <tbody>
+                                <tr>
+                                    <th>Data x-akse</th>
+                                    <th>Data y-akse</th>
+                                </tr>
+                                <tr>
+                                    <td><span id="A1" contenteditable>Indtast data</span></td>
+                                    <td><span id="B1" contenteditable>Indtast data</span></td>
 
-                        <button type="submit" class="btn btn-primary">Gem data</button>
-</form>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="pictureInput">Upload billede</label>
+                        <input type="file" class="form-control-file" id="pictureUploadId" aria-describedby="fileHelp">
+                        <small id="fileHelp" class="form-text text-muted">Vælg billede der skal gemmes sammen med forsøget.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gem data</button>
+                </form>
             </section>
         </div>
         <div class="row rounded box-background mt-2" style="font-size:12px">
@@ -145,6 +149,6 @@
             </div>
 
         </div>
-       
+
 </body>
 </html>
