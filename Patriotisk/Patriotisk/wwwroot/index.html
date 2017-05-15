@@ -21,43 +21,40 @@
         <img class"hidden-sm-down" src="images/logo.png" alt="Patriotisk Markforsøg Header">
     </header>
 
-    <div class="container">
+    <div class="container ">
+        <nav class="navbar sticky-top navbar-light bg-faded navbar-inverse navbar-toggleable-sm">
 
-        <div class="row justify-content-end" style="margin: 5px 0px 5px 2px">
+            <button class="navbar-toggler navbar-toggler-right bg-success" type="button"
+                    data-toggle="collapse" data-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <label class="form-control-label sr-only" for="search">Search </label>
-            <form class="form-inline ">
-                <div class="form-group">
-                    <input id="searchInput" class="form-control mr-1 " placeholder="Søg" />
-                    <button type="submit" class="add-on btn-link"><i class="btn fa fa-search btn-secondary "></i></button>
-                </div>
-            </form>
+            <a href="#" class="navbar-brand text-success hidden-md-up">Patriotisk Selskab</a>
+            <a class="navbar-brand hidden-sm-down text-success">Vinterraps</a>
 
-        </div> <!--Search Nav-->
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <div class="navbar-nav mr-auto">
+                    <a class="nav-item nav-link text-success active" href="#">Forside</a>
+                    <a class="nav-item nav-link text-success" href="#">Nyheder</a>
+                    <a class="nav-item nav-link text-success" href="#">Event info</a>
+                    <a class="nav-item nav-link text-success" href="#">Kontakt</a>
+                    <a class="nav-item nav-link text-success" href="#">Video fra dagen</a>
+
+                </div><!--navbar nav-->
+                <label class="form-control-label sr-only" for="search">Search </label>
+                <form class="form-inline ">
+                    <div class="form-group">
+                        <input id="searchInput" class="form-control mr-2 " placeholder="Søg" />
+                        <button type="submit" class="add-on btn-link"><i class="btn fa fa-search"></i></button>
+                    </div>
+                </form>
+
+            </div><!--navbar collapse-->
+        </nav>
 
         <div class="row">
-            <div class="col col-md-2 col-lg-2 bootstrap-vertical-nav rounded box-background">
-                <ul class="nav nav-pills flex-column navbar-inverse" id="verticalNavBarMenu">
-                    <li class="nav-item">
-                        <a class="nav-link h5">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Nyheder</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Event info</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Kontakt</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Video fra dagen</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-10 rounded box-background">
-                <div class="row" style="padding:5px">
+            <div class="col-lg-12 rounded box-background">
+                <div class="row hidden-sm-down" style="padding:5px">
                     <div class="col col-lg-12">
                         <h1>Velkommen til Patriotisk Selskabs forsøgsside!</h1>
                         <p>Dette er en hjemmeside der er lavet i samarbejde med studerende fra Erhvervsakademiet Lillebælt (EAL), som et tværfagligt projekt.</p>
@@ -66,7 +63,7 @@
                     </div>
                 </div>
                 <div class="row" style="padding:5px">
-                    <div class="col-lg-12">
+                    <div class="col-lg-12 hidden-sm-up">
                         <h3>Oversigt</h3>
                     </div>
                 </div>
