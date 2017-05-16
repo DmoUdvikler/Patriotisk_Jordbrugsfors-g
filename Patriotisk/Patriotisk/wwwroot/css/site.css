@@ -6,7 +6,6 @@
     height: 30vh;
 }
 
-<<<<<<< HEAD
 .menu.img {
     margin: 10px;
     padding: 25px;
@@ -18,9 +17,6 @@
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
 }
-=======
->>>>>>> dd8015d8e53814d677c286cf88d09b03529d5140
-
     .fade:hover {
         opacity: 0;
     }
@@ -35,12 +31,9 @@
 }
 
 .center-cropped {
-<<<<<<< HEAD
     width: 256px;
     height: 172px;
-=======
     max-width: 300px;
->>>>>>> dd8015d8e53814d677c286cf88d09b03529d5140
     background-position: center center;
     background-repeat: no-repeat;
     padding: 5px;
@@ -49,8 +42,5 @@
 .box-background {
     background-color: white;
 }
-<<<<<<< HEAD
-=======
 .container-fluid {
 }
->>>>>>> dd8015d8e53814d677c286cf88d09b03529d5140
