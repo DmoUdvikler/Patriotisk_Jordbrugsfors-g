@@ -6,6 +6,20 @@
     height: 30vh;
 }
 
+.menu.img {
+    margin: 10px;
+    padding: 25px;
+}
+
+.fade {
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+    .fade:hover {
+        opacity: 0;
+    }
 
 .bootstrap-vertical-nav {
     background-color: white;
@@ -17,6 +31,8 @@
 }
 
 .center-cropped {
+    width: 256px;
+    height: 172px;
     max-width: 300px;
     background-position: center center;
     background-repeat: no-repeat;
