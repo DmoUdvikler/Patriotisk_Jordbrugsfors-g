@@ -31,9 +31,9 @@
 }
 
 .center-cropped {
-    width: 256px;
+    width: 100%;
     height: 172px;
-    max-width: 300px;
+    max-width: 312px;
     background-position: center center;
     background-repeat: no-repeat;
     padding: 5px;
