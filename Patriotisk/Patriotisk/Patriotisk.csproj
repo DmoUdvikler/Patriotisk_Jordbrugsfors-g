@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\admin.html" />
     <Content Include="wwwroot\event_Info.html" />
     <Content Include="wwwroot\forsøg.html" />
     <Content Include="wwwroot\index.html" />
