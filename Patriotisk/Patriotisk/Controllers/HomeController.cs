@@ -17,7 +17,15 @@ namespace Patriotisk.Controllers
             
             return View();
         }
+        [Route("api/Home/CreateExperiment")]
+        [Produces("application/json")]
+        [HttpPost]
+        public IActionResult CreateExperiment(bool[] toRoll)
+        {
+            int toReturn = 3; 
 
+            return Ok(toReturn);
+        }
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
