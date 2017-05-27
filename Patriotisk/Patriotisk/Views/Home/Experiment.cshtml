@@ -1,0 +1,50 @@
+﻿{
+@*Layout = "_Layout";//Set to Patriotisk*@
+
+}
+@model Patriotisk.Models.Experiment
+@{
+    ViewBag.Title = "Experiment";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Forsøg</legend>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Treatment, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Treatment, new { @class = "form-control" })               
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sort, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Sort, new { @class = "form-control" })
+                @*@Html.ValidationMessageFor(model => model.MobileNo)*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.FieldName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.FieldName, new { @class = "form-control" })
+                @*@Html.ValidationMessageFor(model => model.MobileNo)*@
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="OK" />
+            </div>
+        </div>             
+    </fieldset>
+
+}
+}

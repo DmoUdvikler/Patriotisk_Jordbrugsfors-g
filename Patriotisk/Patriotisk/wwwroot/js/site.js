@@ -4,41 +4,39 @@
     });
 });
 function submitExperiment() {
-  
-   
-        var formData = new FormData();
-        var uploadedFile = document.getElementById("file").files[0];
-        formData.append(uploadedFile.name, uploadedFile);
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", '@/api/Home/CreateExperiment/.Action("FileUpload", "Content")', true);
-        xhr.send(formData);
-     //$.ajax({
-        //var data;
-        //data = new FormData();
-        //data.append('file', $('#file')[0].files[0]);
-        ////url: "/api/Home/CreateExperiment/", 
-        //data: data,
-        //processData: false,
-        //type: 'POST',
+    //$.post("api/Home/CreateExperiment/Post", $("#createForm").serialize(), function (data) {
+    //do whatever with the response
+    var dataToPost = $("#MyForm").serialize(); 
+    $.ajax({
+        type: "Post",
+        url: "api/Home/CreateExperiment",
+        data: JSON.stringify(dataToPost),
+        contentType: 'application/json; charset=utf-8'
+    });
+}
+    //$("#createForm").ajaxForm({ url: 'api/Home/CreateExperiment', type: 'post' })
+    //$.post('api/Home/CreateExperiment', $('#createForm').serialize())
 
-        //// This will override the content type header, 
-        //// regardless of whether content is actually sent.
-        //// Defaults to 'application/x-www-form-urlencoded'
-        //contentType: 'multipart/form-data',
+    //var $file = document.getElementById('file'),
+    //$formData = new FormData();
 
-        ////Before 1.5.1 you had to do this:
-        //beforeSend: function (x) {
-        //    if (x && x.overrideMimeType) {
-        //        x.overrideMimeType("multipart/form-data");
-        //    }
-        //},
-        //// Now you should be able to do this:
-        //mimeType: 'multipart/form-data',    //Property added in 1.5.1
+    //if ($file.files.length > 0) {
+    //    for (var i = 0; i < $file.files.length; i++) {
+    //        $formData.append('file-' + i, $file.files[i]);
+    //    }
+    //}
 
-        //success: function (data) {
-        //    alert(data);
-        //}
+    //$.ajax({
+    //    url: 'api/Home/CreateExperiment',
+    //    type: 'POST',
+    //    data: $formData,
+    //    dataType: 'json',
+    //    contentType: false,
+    //    processData: false,
+    //    success: function ($data) {
+
+    //    }
     //});
 
-    e.preventDefault();
-}
+
+
