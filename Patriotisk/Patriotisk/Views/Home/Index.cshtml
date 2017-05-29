@@ -49,8 +49,8 @@
             </td>
 
             <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id }, null) | @*creates nulls*@
-                @Html.ActionLink("Edit", "Edit", new { experiment = item})
+                @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() }) |
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() })
             </td>
         </tr>
     }
