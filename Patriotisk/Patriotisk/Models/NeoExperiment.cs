@@ -12,7 +12,7 @@ namespace Patriotisk.Models
         public string Id { get; set; }
         public string Name { get; set; }
         public string Treatment { get; set; }
-        public string Sort { get; set; }
+        public string Crop { get; set; }
         public string FieldName { get; set; }
         public NeoExperiment()
         {
