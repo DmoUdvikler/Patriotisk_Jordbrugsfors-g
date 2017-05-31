@@ -12,6 +12,7 @@
     <Content Include="wwwroot\admin.html" />
     <Content Include="wwwroot\event_Info.html" />
     <Content Include="wwwroot\forsøg.html" />
+    <Content Include="wwwroot\images\vaarbyg.jpg" />
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\index_Skabelon.html" />
     <Content Include="wwwroot\indtastdata.html" />
@@ -38,9 +39,6 @@
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Webpage\" />
   </ItemGroup>
 
 </Project>

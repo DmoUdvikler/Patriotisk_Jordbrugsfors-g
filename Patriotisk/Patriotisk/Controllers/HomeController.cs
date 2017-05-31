@@ -1,47 +1,99 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MongoDB;
-using MongoDB.Driver;
 
 namespace Patriotisk.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        // GET: Home
+        public ActionResult Index()
         {
-          
-            
             return View();
         }
-        [Route("api/Home/CreateExperiment")]
-        [Produces("application/json")]
+
+        
+        public ActionResult View1()
+        {
+            return View();
+        }
+
+        // GET: Home/Details/5
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
+
+        // GET: Home/Create
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        // POST: Home/Create
         [HttpPost]
-        public IActionResult CreateExperiment(bool[] toRoll)
+        [ValidateAntiForgeryToken]
+        public ActionResult Create(IFormCollection collection)
         {
-            int toReturn = 3; 
+            try
+            {
+                // TODO: Add insert logic here
 
-            return Ok(toReturn);
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
         }
-        public IActionResult About()
-        {
-            ViewData["Message"] = "Your application description page.";
 
+        // GET: Home/Edit/5
+        public ActionResult Edit(int id)
+        {
             return View();
         }
 
-        public IActionResult Contact()
+        // POST: Home/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Edit(int id, IFormCollection collection)
         {
-            ViewData["Message"] = "Your contact page.";
+            try
+            {
+                // TODO: Add update logic here
 
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        // GET: Home/Delete/5
+        public ActionResult Delete(int id)
+        {
             return View();
         }
 
-        public IActionResult Error()
+        // POST: Home/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(int id, IFormCollection collection)
         {
-            return View();
+            try
+            {
+                // TODO: Add delete logic here
+
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }
