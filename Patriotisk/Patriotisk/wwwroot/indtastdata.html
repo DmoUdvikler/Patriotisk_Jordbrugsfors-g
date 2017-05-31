@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/site.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script type="text/javascript" src="js/site.js"></script>
     <script src="lib/jquery/dist/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
@@ -72,7 +73,7 @@
                         <label for="graphorzinput">Graftekst horizontal</label>
                         <input class="form-control" id="graphhorz" placeholder="Graftekst horizontal">
                     </div>
-                    <h4>Tabel</h4>
+                    <!--<h4>Tabel</h4>
                     <div class="form-group">
                         <table class="table" style="width:100%">
                             <tbody>
@@ -110,8 +111,18 @@
                         <input type="file" class="form-control-file" id="pictureUploadId" aria-describedby="fileHelp">
                         <small id="fileHelp" class="form-text text-muted">Vælg billede der skal gemmes sammen med forsøget.</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Gem data</button>
+                    <button type="submit" class="btn btn-primary">Gem data</button>-->
+
                 </form>
+            </section>
+            <section>
+                <div id="dynamicTable">                 
+                        Antal rækker:<br>
+                        <input type="text" id="rows"><br>
+                        Antal kolonner:<br>
+                        <input type="text" id="columns">                   
+                    <input type="button" id="createTable" value="Klik for at oprette tabel" onclick="setupTable()">                
+                </div>
             </section>
         </div>
         <div class="row rounded box-background mt-2 hidden-sm-down" style="font-size:12px">
