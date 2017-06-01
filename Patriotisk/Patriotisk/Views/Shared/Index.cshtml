@@ -22,6 +22,9 @@
         <th>
             @Html.DisplayNameFor(model => model.FieldName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
 
         <th></th>
     </tr>
@@ -41,10 +44,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.FieldName)
             </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Year)
+            </th>
 
             <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() }) |
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() })
+                @Html.ActionLink("Slet", "Delete", new { id = item.Id.ToString() }) |
+                @Html.ActionLink("Rediger", "Edit", new { id = item.Id.ToString() })
             </td>
         </tr>
     }

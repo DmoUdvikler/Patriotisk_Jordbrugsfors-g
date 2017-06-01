@@ -1,7 +1,7 @@
 ﻿$(document).ready(function () {
     //$("#createTable").click(function () {
     //    setupTable(); 
-    //});
+    });
 });
 
 function setupTable() {

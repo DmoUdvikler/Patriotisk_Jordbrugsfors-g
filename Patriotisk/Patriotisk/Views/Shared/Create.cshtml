@@ -25,17 +25,21 @@ Layout = "PatriotiskLayout";
             </div>
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.Sort, new { @class = "col-md-2 control-label" })
+            @Html.LabelFor(model => model.Crop, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.Sort, new { @class = "form-control" })
-                @*@Html.ValidationMessageFor(model => model.MobileNo)*@
-            </div>
+                @Html.TextBoxFor(model => model.Crop, new { @class = "form-control" })
+             </div>
         </div>
         <div class="form-group">
             @Html.LabelFor(model => model.FieldName, new { @class = "col-md-2 control-label" })
             <div class="col-md-10">
                 @Html.TextBoxFor(model => model.FieldName, new { @class = "form-control" })
-                @*@Html.ValidationMessageFor(model => model.MobileNo)*@
+              </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Year, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Year, new { @class = "form-control" })
             </div>
         </div>
         <div class="form-group">

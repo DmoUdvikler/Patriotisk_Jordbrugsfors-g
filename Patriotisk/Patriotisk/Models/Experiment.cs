@@ -16,6 +16,7 @@ namespace Patriotisk.Models
         public string Treatment { get; set; }
         public string Crop { get; set; }
         public string FieldName { get; set; }
+        public string Year { get; set; }
         public Experiment()
         {
 
