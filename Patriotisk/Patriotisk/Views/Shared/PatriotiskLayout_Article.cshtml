@@ -15,7 +15,7 @@
     @Html.Raw(JavaScriptSnippet.FullScript)
 </head>
 <body style="background: url(/images/backgroundColor.png) repeat">
-    <header class="clearfix hidden-sm-down" style="height: 30vh; background: url(/images/overview.jpg) no-repeat center center; background-size: cover; margin-top: 0px;">
+    <header class="clearfix hidden-sm-down" style="height: 30vh; background: url(/images/rapsmark.jpg) no-repeat center center; background-size: cover; margin-top: 0px;">
         <img class="hidden-sm-down" src="/images/logo.png" alt="Patriotisk Markforsøg Header">
     </header>
     <div class="container p-0">
@@ -33,12 +33,11 @@
 
                 <div class="collapse navbar-collapse    " id="mynavbar">
                     <div class="navbar-nav mr-auto">
-                        <a class="nav-item nav-link text-success" href="@Url.Action("Index", "Home")">Forside</a>
-                        <a class="nav-item nav-link text-success" href="@Url.Action("Index", "News")">Nyheder</a>
-                        <a class="nav-item nav-link text-success" href="@Url.Action("Index", "Event")">Event info</a>
-                        <a class="nav-item nav-link text-success" href="@Url.Action("Contact", "Home")">Kontakt</a>
-                        <a class="nav-item nav-link text-success" href="@Url.Action("Videoes", "Home")">Video fra dagen</a>
-                        <a class="nav-item nav-link text-success" href="@Url.Action("Login", "Home")">Login</a>
+                        <a class="nav-item nav-link text-success" href="@Url.Action("Index","Home")">Forside</a>
+                        <a class="nav-item nav-link text-success" href="#sorter">Sorter</a>
+                        <a class="nav-item nav-link text-success" href="#vækstregulering">Vækstregulering</a>
+                        <a class="nav-item nav-link text-success" href="#økonomi">Økonomi</a>
+                        <a class="nav-item nav-link text-success" href="#konklusion">Konklusion</a>
                         <li class=" nav-item nav-link text-success dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                                 År
@@ -57,10 +56,10 @@
                         </div>
                     </form>
 
-                </div>
-            </nav> <!--navbar collapse-->
+                </div><!--navbar collapse-->
+            </nav>
         </div> <!--End LayoutHeader-->
-        
+
         @RenderBody()
         <hr />
 
@@ -92,7 +91,7 @@
                 </div>
                 <div class="col col-3 mt-2">
 
-                    <h6>åbningstider</h6>
+                    <h6>Åbningstider</h6>
                     <p>
                         Kontoret er åbent:<br />
                         Mandag - torsdag: kl. 8.00-16.00<br />
@@ -112,3 +111,5 @@
     @RenderSection("Scripts", required: false)
 </body>
 </html>
+
+

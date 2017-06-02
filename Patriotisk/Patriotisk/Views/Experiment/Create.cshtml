@@ -1,58 +1,49 @@
-﻿@model IEnumerable<Patriotisk.Models.Experiment>
-
-@{
-    ViewBag.Title = "Experiments";
+﻿@{
+Layout = "PatriotiskLayout_Admin";
 }
 
-<h2>Forsøg</h2>
-<p>
-    @Html.ActionLink("Opret nyt forsøg", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Id)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Treatment)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sort)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FieldName)
-        </th>
+@model Patriotisk.Models.Experiment
+@{
+    ViewBag.Title = "Create";
+}
 
-        <th></th>
-    </tr>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>Forsøg</legend>
 
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Treatment)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sort)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FieldName)
-            </td>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Treatment, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Treatment, new { @class = "form-control" })               
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Sort, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.Sort, new { @class = "form-control" })
+                @*@Html.ValidationMessageFor(model => model.MobileNo)*@
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.FieldName, new { @class = "col-md-2 control-label" })
+            <div class="col-md-10">
+                @Html.TextBoxFor(model => model.FieldName, new { @class = "form-control" })
+                @*@Html.ValidationMessageFor(model => model.MobileNo)*@
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" class="btn btn-default" value="Create" />
+            </div>
+        </div>             
+    </fieldset>
 
-            <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() }) |
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() })
-            </td>
-        </tr>
-    }
-
-</table>
+}

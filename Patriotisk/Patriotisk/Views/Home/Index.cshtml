@@ -5,13 +5,7 @@
 }
 <html>
 <head>
-    @*<meta content="utf-8">
-    <script src="~/lib/jquery/dist/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="~/css/site.css">*@
+  <title>Patriotisk - Forside</title>
 </head>
 <body>
 
@@ -32,7 +26,7 @@
                     </div>
                 </div>
                 <div class="row" style="padding:5px">
-                    <a class="col-md-4 col-sm-12 input-group-btn" href="forsøg.html">
+                    <a class="col-md-4 col-sm-12 input-group-btn" href="@Url.Action("Vinterraps_example", "Article")">
                         <img class="card-img-top mx-auto img-fluid center-cropped"
                              src="~/images/vinterraps.jpg" alt="vinter_raps" />
                         <div class="card-block card-img-overlay">
@@ -40,7 +34,7 @@
                             <!-- <p class="card-text"></p>-->
                         </div>
                     </a>
-                    <a class="col-md-4 col-sm-12 input-group-btn" href="forsøg.html">
+                    <a class="col-md-4 col-sm-12 input-group-btn" href="@Url.Action("Vinterraps_example", "Article")">
 
                         <img class="card-img-top mx-auto img-fluid center-cropped"
                              src="~/images/vinterhvede.jpg" alt="vinter_hvede" />
@@ -50,7 +44,7 @@
                         </div>
                     </a>
 
-                    <a class="col-md-4 col-sm-12 input-group-btn" href="forsøg.html">
+                    <a class="col-md-4 col-sm-12 input-group-btn" href="@Url.Action("Vinterraps_example", "Article")">
 
                         <img class="card-img-top mx-auto img-fluid center-cropped"
                              src="~/images/frøgræs.jpg" alt="Frø_græs" />
@@ -60,7 +54,7 @@
                         </div>
                     </a>
 
-                    <a class="col-md-4 col-sm-12 input-group-btn" href="forsøg.html">
+                    <a class="col-md-4 col-sm-12 input-group-btn" href="@Url.Action("Vinterraps_example", "Article")">
 
                         <img class="mx-auto img-fluid center-cropped"
                              src="~/images/vaarbyg.jpg" alt="vårbyg" />
@@ -70,7 +64,7 @@
                         </div>
                     </a>
 
-                    <a class=" col-md-4 col-sm-12 input-group-btn" href="forsøg.html">
+                    <a class=" col-md-4 col-sm-12 input-group-btn" href="@Url.Action("Vinterraps_example", "Article")">
                         <img class="card-img-top mx-auto img-fluid center-cropped"
                              src="~/images/græs_ukrudt.jpg" alt="græs_ukrudt" />
                         <div class="card-block card-img-overlay">
@@ -86,53 +80,3 @@
 </body>
 
 </html>
-
-<<<<<<< HEAD:Patriotisk/Patriotisk/Views/Home/Index.cshtml
-=======
-<h2>Forsøg</h2>
-<p>
-    @Html.ActionLink("Opret nyt forsøg", "Create")
-</p>
-<table class="table">
-    <tr>    
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Treatment)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Sort)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.FieldName)
-        </th>
-
-        <th></th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>      
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Treatment)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sort)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FieldName)
-            </td>
-
-            <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() }) |
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() })
-            </td>
-        </tr>
-    }
-
-</table>
->>>>>>> 452dbabf63c61895790ee8c48231340d996a64ae:Patriotisk/Patriotisk/Views/Shared/Index.cshtml

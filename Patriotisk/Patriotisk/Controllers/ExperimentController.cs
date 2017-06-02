@@ -14,6 +14,19 @@ namespace Patriotisk.Controllers
         {
             return View();
         }
+        public IActionResult NIndex()
+        {
+            return View();
+        }
+        public IActionResult Create()
+        {
+            return View();
+        }
+        public IActionResult Edit()
+        {
+            return View();
+        }
+   
         [Route("api/Home/CreateExperiment")]
         [Produces("application/json")]
         [HttpPost]

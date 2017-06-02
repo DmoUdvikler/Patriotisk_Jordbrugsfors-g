@@ -7,41 +7,32 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Patriotisk.Controllers
 {
-    public class HomeController : Controller
+    public class ArticleController : Controller
     {
-        // GET: Home
+        // GET: Article
         public ActionResult Index()
         {
             return View();
         }
 
-        
-        public ActionResult Videoes()
-        {
-            return View();
-        }
-        public ActionResult Contact()
+        public ActionResult Vinterraps_example()
         {
             return View();
         }
 
-        public ActionResult Login()
-        {
-            return View();
-        }
-        // GET: Home/Details/5
+        // GET: Article/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: Home/Create
+        // GET: Article/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Home/Create
+        // POST: Article/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -58,13 +49,13 @@ namespace Patriotisk.Controllers
             }
         }
 
-        // GET: Home/Edit/5
+        // GET: Article/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: Home/Edit/5
+        // POST: Article/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -81,13 +72,13 @@ namespace Patriotisk.Controllers
             }
         }
 
-        // GET: Home/Delete/5
+        // GET: Article/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: Home/Delete/5
+        // POST: Article/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
