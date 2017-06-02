@@ -73,9 +73,9 @@
                         <label for="graphorzinput">Graftekst horizontal</label>
                         <input class="form-control" id="graphhorz" placeholder="Graftekst horizontal">
                     </div>
-                    <!--<h4>Tabel</h4>
-                    <div class="form-group">
-                        <table class="table" style="width:100%">
+                    <h4>Tabel</h4>
+                    <!--<div class="form-group">-->
+                        <!--<table class="table" style="width:100%">
                             <tbody>
                                 <tr>
                                     <th>Data x-akse</th>
@@ -103,19 +103,13 @@
                                 </tr>
                             </tbody>
 
-                        </table>
+                        </table>-->
 
-                    </div>
-                    <div class="form-group">
-                        <label for="pictureInput">Upload billede</label>
-                        <input type="file" class="form-control-file" id="pictureUploadId" aria-describedby="fileHelp">
-                        <small id="fileHelp" class="form-text text-muted">Vælg billede der skal gemmes sammen med forsøget.</small>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Gem data</button>-->
+                    <!--</div>-->
+                   
 
-                </form>
-            </section>
-            <section>
+                <!--</form>-->
+            
                 <div id="dynamicTable">                 
                         Antal rækker:<br>
                         <input type="text" id="rows"><br>
@@ -123,6 +117,12 @@
                         <input type="text" id="columns">                   
                     <input type="button" id="createTable" value="Klik for at oprette tabel" onclick="setupTable()">                
                 </div>
+                    <div class="form-group">
+                        <label for="pictureInput">Upload billede</label>
+                        <input type="file" class="form-control-file" id="pictureUploadId" aria-describedby="fileHelp">
+                        <small id="fileHelp" class="form-text text-muted">Vælg billede der skal gemmes sammen med forsøget.</small>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Gem data</button>
             </section>
         </div>
         <div class="row rounded box-background mt-2 hidden-sm-down" style="font-size:12px">

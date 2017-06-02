@@ -1,8 +1,7 @@
-﻿@model IEnumerable<Patriotisk.Models.NeoExperiment>
+﻿@model IEnumerable<Patriotisk.Models.Experiment>
 
 @{
-    ViewBag.Title = "NExperiments";
-    Layout = "~/Views/Shared/PatriotiskLayout_Admin.cshtml";
+    ViewBag.Title = "Experiments";
 }
 
 <h2>Forsøg</h2>
@@ -10,7 +9,7 @@
     @Html.ActionLink("Opret nyt forsøg", "Create")
 </p>
 <table class="table">
-    <tr>
+    <tr>    
         <th>
             @Html.DisplayNameFor(model => model.Name)
         </th>
@@ -23,13 +22,16 @@
         <th>
             @Html.DisplayNameFor(model => model.FieldName)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
 
         <th></th>
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
+        <tr>      
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
@@ -42,10 +44,13 @@
             <td>
                 @Html.DisplayFor(modelItem => item.FieldName)
             </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Year)
+            </th>
 
             <td>
-                @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() }) |
-                @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() })
+                @Html.ActionLink("Slet", "Delete", new { id = item.Id.ToString() }) |
+                @Html.ActionLink("Rediger", "Edit", new { id = item.Id.ToString() })
             </td>
         </tr>
     }
