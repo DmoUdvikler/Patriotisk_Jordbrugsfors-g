@@ -13,19 +13,25 @@ namespace Patriotisk.Controllers
 {
     public class HomeController : Controller
     {
-        MongoDBPersistence mongo; 
+        MongoDBPersistence mongo;
         public HomeController()
         {
-            mongo = new MongoDBPersistence(); 
+            mongo = new MongoDBPersistence();
         }
         [Route("api/home/index")]
         [HttpGet]
         public IActionResult Index()
         {
-
-            return View(mongo.GetExperiments());
+            //return View(mongo.GetExperimentsByCrop("Raps")); Test
+           return View(mongo.GetExperiments());
         }
-       
+
+        //[HttpGet] Doesnt work
+        //public ActionResult GetByYear(string year)
+        //{
+
+        //    return View("Index", mongo.GetExperimentsByYear(year));
+        //}
         [Route("api/Home/Experiment")]
         [HttpGet]
         public ActionResult Create()
@@ -36,14 +42,14 @@ namespace Patriotisk.Controllers
         [HttpPost]
         public ActionResult Create(Experiment experiment)
         {
-            mongo.Save(experiment); 
+            mongo.Save(experiment);
             return RedirectToAction("Index");
         }
         [Route("api/Home/Edit")]
         [HttpGet]
         public ActionResult Edit(string id)
         {
-            List<Experiment> experiments = mongo.FindExperiment(id); 
+            List<Experiment> experiments = mongo.FindExperiment(id);
             TempData["ObjectID"] = experiments[0].Id.ToString();
             return View(experiments[0]);
         }
@@ -55,7 +61,7 @@ namespace Patriotisk.Controllers
             if (ModelState.IsValid)
             {
                 string id = TempData["ObjectID"].ToString();
-                mongo.Edit(experiment, id);              
+                mongo.Edit(experiment, id);
             }
             return RedirectToAction("Index");
         }
@@ -63,7 +69,7 @@ namespace Patriotisk.Controllers
         [HttpGet]
         public ActionResult Delete(string id)
         {
-            mongo.Delete(id); 
+            mongo.Delete(id);
             return RedirectToAction("Index");
         }
 
