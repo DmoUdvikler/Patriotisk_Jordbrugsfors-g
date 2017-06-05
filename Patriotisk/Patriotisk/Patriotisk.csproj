@@ -49,5 +49,9 @@
     <Folder Include="Views\Event\" />
     <Folder Include="Views\News\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Persistence\MongoPersistBackUp.cs" />
+    <None Include="Persistence\NeoPerBackup.cs" />
+  </ItemGroup>
 
 </Project>
