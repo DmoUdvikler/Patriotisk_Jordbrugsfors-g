@@ -28,6 +28,14 @@ namespace Patriotisk.Controllers
             return View(mongo.GetExperiments());
         }
 
+        [HttpGet]
+        public IActionResult AddData()
+        {
+            //return View(mongo.GetExperimentsByCrop("Raps")); Test
+            return View();
+        }
+        
+
         //[HttpGet] Doesnt work
         //public ActionResult GetByYear(string year)
         //{

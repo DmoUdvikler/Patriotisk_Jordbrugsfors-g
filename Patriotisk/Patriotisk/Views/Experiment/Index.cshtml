@@ -47,7 +47,8 @@
 
                 <td>
                     @Html.ActionLink("Delete", "Delete", new { id = item.Id.ToString() }) |
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() })
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id.ToString() }) |
+                    @Html.ActionLink("Add Data", "AddData", new { id = item.Id.ToString() })
                 </td>
             </tr>
         }

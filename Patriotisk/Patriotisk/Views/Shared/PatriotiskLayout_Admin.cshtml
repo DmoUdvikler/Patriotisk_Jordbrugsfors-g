@@ -2,14 +2,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta http-equiv="refresh" content="1800">
+    <title>Patriotisk - Indtast data</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/site.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/lib/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="/js/site.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="~/css/site.css">
     <title>@ViewData["Title"] - Patriotisk</title>
 
     @Html.Raw(JavaScriptSnippet.FullScript)
@@ -39,7 +43,7 @@
                             <a class="nav-item nav-link text-success" href="@Url.Action("Index", "Admin")">Admin</a>
                             <a class="nav-item nav-link text-success" href="@Url.Action("Index", "Experiment")">Oversigt</a>
                             <a class="nav-item nav-link text-success" href="@Url.Action("Create", "Experiment")">Opret forsøg</a>
-                            <a class="nav-item nav-link text-success" href="@Url.Action("Edit", "Experiment")">Indtast data</a>
+                            <a class="nav-item nav-link text-success" href="@Url.Action("AddData", "Experiment")">Indtast data</a>
                         </div><!--navbar nav-->
                         <label class="form-control-label sr-only" for="search">Search </label>
                         <form class="form-inline ">
