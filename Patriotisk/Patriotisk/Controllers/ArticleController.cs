@@ -19,6 +19,10 @@ namespace Patriotisk.Controllers
         {
             return View();
         }
+        public ActionResult Graph()
+        {
+            return View();
+        }
 
         // GET: Article/Details/5
         public ActionResult Details(int id)
