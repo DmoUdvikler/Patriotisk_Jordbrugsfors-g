@@ -20,49 +20,7 @@ namespace Patriotisk.Controllers
         {
             mongo = new MongoDBPersistence();
         }
-
-
-        //POST: Home/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Home/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
-
-        // POST: Home/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        [Route("api/home/index")]
+        
         [HttpGet]
         public IActionResult Index()
         {
@@ -76,20 +34,17 @@ namespace Patriotisk.Controllers
 
         //    return View("Index", mongo.GetExperimentsByYear(year));
         //}
-        [Route("api/Home/Experiment")]
         [HttpGet]
         public ActionResult Create()
         {
             return View(new Experiment());
         }
-        [Route("api/Home/Experiment")]
         [HttpPost]
         public ActionResult Create(Experiment experiment)
         {
             mongo.Save(experiment);
             return RedirectToAction("Index");
         }
-        [Route("api/Home/Edit")]
         [HttpGet]
         public ActionResult Edit(string id)
         {
@@ -98,7 +53,6 @@ namespace Patriotisk.Controllers
             return View(experiments[0]);
         }
 
-        [Route("api/Home/Edit")]
         [HttpPost]
         public ActionResult Edit(Experiment experiment)
         {
@@ -109,7 +63,6 @@ namespace Patriotisk.Controllers
             }
             return RedirectToAction("Index");
         }
-        [Route("api/Home/Delete")]
         [HttpGet]
         public ActionResult Delete(string id)
         {
