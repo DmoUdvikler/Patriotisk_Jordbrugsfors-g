@@ -44,16 +44,26 @@
                             <a class="nav-item nav-link text-success" href="@Url.Action("Index", "Experiment")">Oversigt</a>
                             <a class="nav-item nav-link text-success" href="@Url.Action("Create", "Experiment")">Opret forsøg</a>
                             <a class="nav-item nav-link text-success" href="@Url.Action("AddData", "Experiment")">Indtast data</a>
+
+                            <li class=" nav-item nav-link text-success dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    År
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=@Url.Action("ShowByYearAdmin", "Experiment", new { year = "2017"})>2017</a></li>
+                                    <li><a href=@Url.Action("ShowByYearAdmin", "Experiment", new { year = "2016"})>2016</a></li>
+                                </ul>
+                            </li>
                         </div><!--navbar nav-->
-                        <label class="form-control-label sr-only" for="search">Search </label>
-                        <form class="form-inline ">
-                            <div class="input-group">
-                                <input type="text" class="form-control" />
-                                <span class="input-group-addon">
-                                    <i class="fa fa-search"></i>
-                                </span>
-                            </div>
-                        </form>
+                            <label class="form-control-label sr-only" for="search">Search </label>
+                            <form class="form-inline ">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" />
+                                    <span class="input-group-addon">
+                                        <i class="fa fa-search"></i>
+                                    </span>
+                                </div>
+                            </form>
 
                     </div><!--navbar collapse-->
                 </nav>

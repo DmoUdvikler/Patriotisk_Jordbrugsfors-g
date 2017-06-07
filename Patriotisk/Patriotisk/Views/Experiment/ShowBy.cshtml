@@ -2,13 +2,11 @@
 
 @{
     ViewBag.Title = "Experiments";
-    Layout = "~/Views/Shared/PatriotiskLayout_Admin.cshtml";
+    Layout = "~/Views/Shared/PatriotiskLayout.cshtml";
 }
 
 <h2>Forsøg</h2>
-<p>
-    @Html.ActionLink("Opret nyt forsøg", "Create")
-</p>
+
 <table class="table">
     <tr>
         <th>
@@ -50,12 +48,11 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Year)
                 </td>
-
+                <!-- Not implemented
                 <td>
-                    @Html.ActionLink("Slet", "Delete", new { id = item.Id.ToString() }) |
-                    @Html.ActionLink("Redigér", "Edit", new { id = item.Id.ToString() }) |
-                    @Html.ActionLink("Tilføj data", "AddData", new { id = item.Id.ToString() })
+                    @Html.ActionLink("Se Data", "ShowData", new { id = item.Id.ToString() })
                 </td>
+                        -->
             </tr>
         }
     }
