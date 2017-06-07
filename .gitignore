@@ -1,4 +1,4 @@
-
+﻿
 # Created by https://www.gitignore.io/api/visualstudio
 
 ### VisualStudio ###
@@ -292,6 +292,10 @@ __pycache__/
 *.xsd.cs
 
 # End of https://www.gitignore.io/api/visualstudio
+
 Patriotisk/Patriotisk/wwwroot/Videos/Åben forsøgsmark på Bramstrup 2016 - highlights.mp4
 Patriotisk/Patriotisk/Persistence/NeoPerBackup.cs
 Patriotisk/Patriotisk/Persistence/MongoPersistBackUp.cs
+Patriotisk/Patriotisk/Persistence/NeoPerBackup.cs
+Patriotisk/Patriotisk/Persistence/MongoDBPersistence.cs
+
