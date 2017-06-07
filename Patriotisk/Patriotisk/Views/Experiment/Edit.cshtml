@@ -1,11 +1,11 @@
-@model Patriotisk.Models.Experiment
+﻿@model Patriotisk.Models.Experiment
 
 @{
     ViewData["Title"] = "Edit";
     Layout = "~/Views/Shared/PatriotiskLayout_Admin.cshtml";
 }
 
-<h2>Edit</h2>
+<h2>Redigér</h2>
 
 <form asp-action="Edit">
     <div class="form-horizontal">
@@ -13,35 +13,35 @@
         <hr />
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <div class="form-group">
-            <label asp-for="Name" class="col-md-2 control-label"></label>
+            <label asp-for="Name" class="col-md-2 control-label">Navn</label>
             <div class="col-md-10">
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="Treatment" class="col-md-2 control-label"></label>
+            <label asp-for="Treatment" class="col-md-2 control-label">Behandling</label>
             <div class="col-md-10">
                 <input asp-for="Treatment" class="form-control" />
                 <span asp-validation-for="Treatment" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="Crop" class="col-md-2 control-label"></label>
+            <label asp-for="Crop" class="col-md-2 control-label">Afgrøde</label>
             <div class="col-md-10">
                 <input asp-for="Crop" class="form-control" />
                 <span asp-validation-for="Crop" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="FieldName" class="col-md-2 control-label"></label>
+            <label asp-for="FieldName" class="col-md-2 control-label">Mark Navn</label>
             <div class="col-md-10">
                 <input asp-for="FieldName" class="form-control" />
                 <span asp-validation-for="FieldName" class="text-danger"></span>
             </div>
         </div>
         <div class="form-group">
-            <label asp-for="Year" class="col-md-2 control-label"></label>
+            <label asp-for="Year" class="col-md-2 control-label">År</label>
             <div class="col-md-10">
                 <input asp-for="Year" class="form-control" />
                 <span asp-validation-for="Year" class="text-danger"></span>
@@ -49,14 +49,14 @@
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Gem" class="btn btn-default" />
             </div>
         </div>
     </div>
 </form>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Oversigt</a>
 </div>
 
 @section Scripts {

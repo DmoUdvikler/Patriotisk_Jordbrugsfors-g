@@ -1,8 +1,18 @@
 ﻿
 @{
     ViewData["Title"] = "Graph";
-    Layout = "~/Views/Shared/PatriotiskLayout_Article.cshtml";
+    Layout = "~/Views/Shared/PatriotiskLayout.cshtml";
 }
 
-<h2>Graph</h2>
+    <div>
+        <div class="mt-1">
+            <h1 style="border-bottom: 2px solid black">Graf_test</h1>
+        </div>
+        <div class="mt-4">
+            <h4>Graf beskrivelse</h4>
 
+            <p>Lige nu er det bare en test, for at få vist en graf </p>
+        </div>
+
+        <canvas id="graphCanvasID" width="600" height="500" style="border:2px solid #000000;"></canvas>
+    </div>
