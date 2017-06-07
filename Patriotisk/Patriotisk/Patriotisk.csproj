@@ -50,7 +50,7 @@
     <Folder Include="Views\News\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Persistence\MongoPersistBackUp.cs" />
+    <None Include="Persistence\MongoDBPersistence.cs" />
     <None Include="Persistence\NeoPerBackup.cs" />
   </ItemGroup>
 
