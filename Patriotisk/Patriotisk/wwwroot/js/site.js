@@ -40,17 +40,17 @@ function setupTable() {
 
     var tableDiv = document.getElementById("dynamicTable");
 
-    var table = document.createElement("TABLE");
-    table.setAttribute("contenteditable", "true"); 
-    table.border = "1";
+    var dynamicTable = document.createElement("TABLE");
+    dynamicTable.setAttribute("contenteditable", "true"); 
+    dynamicTable.border = "1";
 
-    var tableBody = document.createElement("TBODY");
-    table.appendChild(tableBody);
+    var dynamicTableBody = document.createElement("TBODY");
+    dynamicTable.appendChild(dynamicTableBody);
 
     for (var i = 0; i < rows; i++) {
         var tableRow = document.createElement("TR");
 
-        tableBody.appendChild(tableRow);
+        dynamicTableBody.appendChild(tableRow);
 
         for (var j = 0; j < columns; j++) {
             var tableColumn = document.createElement("TD");
@@ -59,6 +59,6 @@ function setupTable() {
             tableRow.appendChild(tableColumn);
         }
     }
-    tableDiv.appendChild(table);
+    tableDiv.appendChild(dynamicTable);
 
 }
