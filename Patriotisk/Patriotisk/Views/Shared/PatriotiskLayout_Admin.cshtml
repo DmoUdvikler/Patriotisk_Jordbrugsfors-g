@@ -54,6 +54,15 @@
                                     <li><a href=@Url.Action("ShowByYearAdmin", "Experiment", new { year = "2016"})>2016</a></li>
                                 </ul>
                             </li>
+                            <li class=" nav-item nav-link text-success dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                    Afgrød
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=@Url.Action("ShowByCropAdmin", "Experiment", new { crop = "Raps"})>Raps</a></li>
+                                    <li><a href=@Url.Action("ShowByCropAdmin", "Experiment", new { crop = "Hvede"})>Hvede</a></li>
+                                </ul>
+                            </li>
                         </div><!--navbar nav-->
                             <label class="form-control-label sr-only" for="search">Search </label>
                             <form class="form-inline ">

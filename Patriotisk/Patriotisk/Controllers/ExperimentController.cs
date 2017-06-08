@@ -39,6 +39,18 @@ namespace Patriotisk.Controllers
             //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View("Index", mongo.GetExperimentsByYear(year));
         }
+        [HttpGet]
+        public IActionResult ShowByCrop(string crop)
+        {
+            //return View(mongo.GetExperimentsByCrop("Raps")); Test
+            return View("ShowBy", mongo.GetExperimentsByCrop(crop));
+        }
+        [HttpGet]
+        public IActionResult ShowByCropAdmin(string crop)
+        {
+            //return View(mongo.GetExperimentsByCrop("Raps")); Test
+            return View("Index", mongo.GetExperimentsByCrop(crop));
+        }
 
         [HttpGet]
         public IActionResult AddData()
