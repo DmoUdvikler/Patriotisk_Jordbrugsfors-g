@@ -4,7 +4,7 @@
 function createGraph(/*numberArray*/) {
     var numberArray = [[3347, "Ubehandlet 40 pl"], [3322, "Ubehandlet 40 pl"],
     [3442, "1,5 l Folicur Xpert 40 pl"], [3488, "1,5 l Folicur Xpert 20 pl"]];
-    // var numberArray = [ [2,"Caryx"],[4,"Folicur Xpert"]]; 
+ 
     var c = document.getElementById("graphCanvasID");
     var context = c.getContext("2d");
     var segmentHeight;

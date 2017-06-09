@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
@@ -75,7 +74,7 @@
                 </div>
             </nav> <!--navbar collapse-->
         </div> <!--End LayoutHeader-->
-        <section class="col-lg-12 col-md-10 col-sm-12 rounded" style="background-color:white">
+        <section class="col-lg-12 col-md-10 col-sm-12 rounded box-background" @*style="background-color:white"*@>
             @RenderBody()
         </section>
             <footer>
@@ -120,9 +119,5 @@
                 </div>
             </footer>
 </div> <!--End container-->
-
-
-
-    @RenderSection("Scripts", required: false)
 </body>
 </html>

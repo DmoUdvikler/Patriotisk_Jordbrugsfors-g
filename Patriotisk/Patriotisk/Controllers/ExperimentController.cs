@@ -24,48 +24,34 @@ namespace Patriotisk.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View(mongo.GetExperiments());
         }
         [HttpGet]
         public IActionResult ShowByYear(string year)
         {
-            //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View("ShowBy", mongo.GetExperimentsByYear(year));
         }
         [HttpGet]
         public IActionResult ShowByYearAdmin(string year)
         {
-            //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View("Index", mongo.GetExperimentsByYear(year));
         }
         [HttpGet]
         public IActionResult ShowByCrop(string crop)
         {
-            //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View("ShowBy", mongo.GetExperimentsByCrop(crop));
         }
         [HttpGet]
         public IActionResult ShowByCropAdmin(string crop)
         {
-            //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View("Index", mongo.GetExperimentsByCrop(crop));
         }
 
         [HttpGet]
         public IActionResult AddData()
         {
-            //return View(mongo.GetExperimentsByCrop("Raps")); Test
             return View();
         }
-        
-
-        //[HttpGet] Doesnt work
-        //public ActionResult GetByYear(string year)
-        //{
-
-        //    return View("Index", mongo.GetExperimentsByYear(year));
-        //}
         [HttpGet]
         public ActionResult Create()
         {
@@ -84,7 +70,6 @@ namespace Patriotisk.Controllers
             TempData["ObjectID"] = experiments[0].Id.ToString();
             return View(experiments[0]);
         }
-
         [HttpPost]
         public ActionResult Edit(Experiment experiment)
         {
@@ -101,23 +86,5 @@ namespace Patriotisk.Controllers
             mongo.Delete(id);
             return RedirectToAction("Index");
         }
-
-        // POST: Home/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
     }
 }

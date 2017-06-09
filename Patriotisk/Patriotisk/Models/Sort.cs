@@ -8,6 +8,5 @@ namespace Patriotisk.Models
     public class Sort
     {     
         public string Name { get; set; }
-
     }
 }

@@ -33,7 +33,6 @@ namespace Patriotisk
 
             services.AddSession(options =>
             {
-                
                 options.IdleTimeout = TimeSpan.FromSeconds(7200);
                 options.CookieHttpOnly = true;
             });

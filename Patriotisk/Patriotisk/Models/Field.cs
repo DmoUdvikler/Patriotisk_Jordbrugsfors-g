@@ -8,6 +8,5 @@ namespace Patriotisk.Models
     public class Field
     {
         public string FieldId { get; set; }     
-
     }
 }

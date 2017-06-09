@@ -9,14 +9,11 @@ namespace Patriotisk.Controllers
 {
     public class HomeController : Controller
     {
-
         // GET: Home
         public ActionResult Index()
         {
             return View();
         }
-
-        
         public ActionResult Videoes()
         {
             return View();
@@ -25,11 +22,9 @@ namespace Patriotisk.Controllers
         {
             return View();
         }
-
         public ActionResult Login()
         {
             return View();
         }
-        
     }
 }

@@ -7,8 +7,6 @@ namespace Patriotisk.Models
 {
     public class NeoExperiment
     {
-
-
         public string Id { get; set; }
         public string Name { get; set; }
         public string Treatment { get; set; }

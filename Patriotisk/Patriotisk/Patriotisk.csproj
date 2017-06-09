@@ -17,7 +17,6 @@
     <Content Include="wwwroot\index_Skabelon.html" />
     <Content Include="wwwroot\indtastdata.html" />
     <Content Include="wwwroot\kontakt.html" />
-    <Content Include="wwwroot\lib\footer.html" />
     <Content Include="wwwroot\news.html" />
     <Content Include="wwwroot\opretforsøg.html" />
     <Content Include="wwwroot\videos.html" />
@@ -50,7 +49,6 @@
     <Folder Include="Views\News\" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Persistence\MongoDBPersistence.cs" />
     <None Include="Persistence\NeoPerBackup.cs" />
   </ItemGroup>
 

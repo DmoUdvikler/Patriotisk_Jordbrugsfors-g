@@ -8,6 +8,5 @@ namespace Patriotisk.Models
     public class YearOfExperiment
     {
         public string Year { get; set; }
-
     }
 }
