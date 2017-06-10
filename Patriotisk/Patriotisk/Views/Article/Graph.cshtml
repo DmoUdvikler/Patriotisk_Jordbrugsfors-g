@@ -4,15 +4,31 @@
     Layout = "~/Views/Shared/PatriotiskLayout.cshtml";
 }
 
-    <div>
-        <div class="mt-1">
-            <h1 style="border-bottom: 2px solid black">Graf_test</h1>
-        </div>
-        <div class="mt-4">
-            <h4>Graf beskrivelse</h4>
-
-            <p>Lige nu er det bare en test, for at få vist en graf </p>
-        </div>
-
-        <canvas id="graphCanvasID" width="600" height="500" style="border:2px solid #000000;"></canvas>
+<div>
+    <div class="mt-1">
+        <h1 style="border-bottom: 2px solid black">Graf_test</h1>
     </div>
+    <div class="mt-4">
+        <h4>Graf beskrivelse</h4>
+
+        <p>Lige nu er det bare en test, for at få vist en graf. Klik på et eksperiment på listen for at få vist en graf over data.</p>
+    </div>
+    <div class="col-lg-4 col-md-12">
+        <form id="form1" runat="server">
+            <ul id="tree1">
+                <li class="forGraph">
+                    <i style='color: #fff;'></i>
+                    experiment1
+                    <ul></ul>
+                </li>
+                <li class="forGraph">
+                    <i style='color: #fff;'></i>
+                    experiment2
+                    <ul></ul>
+                </li>              
+            </ul>
+        </form>
+    </div>
+
+    <canvas id="graphCanvasID" width="600" height="500" style="border:2px solid #000000;"></canvas>
+</div>

@@ -20,11 +20,39 @@ namespace Patriotisk.Controllers
         {
             mongo = new MongoDBPersistence();
         }
-        
+
         [HttpGet]
         public IActionResult Index()
         {
             return View(mongo.GetExperiments());
+        }
+        [HttpGet]
+
+        [Route("api/Experiment/Graph")]
+        public IActionResult GraphSuff(int id)
+        {
+            string[,] toReturn;
+            if (id == 1)
+            {
+                toReturn = new string[4, 2];
+                toReturn[0, 0] = "3347";
+                toReturn[0, 1] = "Ubehandlet 40 pl";
+                toReturn[1, 0] = "3322";
+                toReturn[1, 1] = "Ubehandlet 40 pl";
+                toReturn[2, 0] = "3442";
+                toReturn[2, 1] = "1,5 l Folicur Xpert 40 pl";
+                toReturn[3, 0] = "3488";
+                toReturn[3, 1] = "1,5 l Folicur Xpert 20 pl";    
+            }
+            else
+            {
+                toReturn = new string[2, 2];
+                toReturn[0, 0] = "2000";
+                toReturn[0, 1] = "Ubehandlet 40 pl";
+                toReturn[1, 0] = "4000";
+                toReturn[1, 1] = "Caryx 40 pl";
+            }            
+            return Ok(toReturn);
         }
         [HttpGet]
         public IActionResult ShowByYear(string year)

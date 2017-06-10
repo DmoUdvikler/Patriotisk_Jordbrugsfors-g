@@ -1,17 +1,31 @@
 ﻿$(document).ready(function () {
-    createGraph();
+    $(".forGraph").click(function () {
+        var text = $(this).text().replace("experiment", "").trim();  
+        getExperimentForGraph(text);
+    });
 });
-function createGraph(/*numberArray*/) {
-    var numberArray = [[3347, "Ubehandlet 40 pl"], [3322, "Ubehandlet 40 pl"],
-    [3442, "1,5 l Folicur Xpert 40 pl"], [3488, "1,5 l Folicur Xpert 20 pl"]];
- 
+function getExperimentForGraph(number) {
+    $.ajax({
+        type: "GET",
+        url: "/api/Experiment/Graph/",
+        data: "id= " + number,
+        success: function (data) {
+            if (data !== null)
+                createGraph(data); 
+        }
+    });
+
+}
+function createGraph(numberArray) {
+    var canvasHeight = 500;
+    var canvasWidth = 600;
     var c = document.getElementById("graphCanvasID");
     var context = c.getContext("2d");
+    context.clearRect(0, 0, canvasWidth, canvasHeight);
     var segmentHeight;
     var margin = 4;
     var numberOfSegments = numberArray.length;
-    var canvasHeight = 500;
-    var canvasWidth = 600;
+    
     var segmentWidth = (canvasWidth / numberOfSegments) - (margin * 2);
     var ratio;
     var highestNumber = 0;
