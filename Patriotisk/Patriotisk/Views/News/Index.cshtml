@@ -1,8 +1,23 @@
-
+@model Patriotisk.Models.Subscriber
 @{
     ViewData["Title"] = "Index";
     Layout = "~/Views/Shared/PatriotiskLayout.cshtml";
 }
-
 <h2>Nyhed oversigt</h2>
+<br />
+<h4>Udfyld oplysningerne for at modtage nyhedsbrevet.</h4>
+<br />
+<form>
+    <h5>Indtast navn</h5>
+    <input required />
+    <br />
+    <h5>Indtast email</h5>
+    <input type="email" required />
+    <input type="submit" value="Submit" />
+</form>
+
+@*<p>
+    @Html.ActionLink("Tilmeld nyhedsbrev", "Create")
+</p>*@
+<br />
 
