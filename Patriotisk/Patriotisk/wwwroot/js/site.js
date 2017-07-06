@@ -14,8 +14,9 @@ function getExperimentForGraph(number) {
                 createGraph(data); 
         }
     });
-
 }
+
+
 function createGraph(numberArray) {
     var canvasHeight = 500;
     var canvasWidth = 600;
